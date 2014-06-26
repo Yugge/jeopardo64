@@ -1,0 +1,139 @@
+@font-face {
+    font-family: lg;
+    src: url(/src/lg.otf);
+}
+body {
+    background-color: #31a3f5;
+}
+
+.hello {
+    opacity: 0;
+}
+.hello.ng-enter .hello.ng-enter-active {
+    opacity: 1;
+}
+
+.j-value {
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    background: white;
+    vertical-align: middle;
+    line-height: 90px;
+    border-radius: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.j-set-wrapper{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.j-header{
+    text-align: center;
+    font-size: 150%;
+    color: #ffffff;
+    margin-bottom: 20px;
+    opacity: 0;
+}
+
+.j-set.ng-enter {
+    opacity: 0;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+.j-set.ng-enter-active {
+    opacity: 1;
+}
+
+.j-set-wrapper.ng-hide-add {
+    opacity: 1;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    display: block !important;
+}
+.j-set-wrapper.ng-hide-add.ng-hide-add-active {
+    opacity: 0;
+}
+
+.j-set-wrapper.ng-hide-remove {
+    opacity: 0;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    transition: 0.25s;
+    -webkit-transition-delay: 0.25s;
+    -moz-transition-delay: 0.25s;
+    -ms-transition-delay: 0.25s;
+    -o-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+    display: block !important;
+}
+.j-set-wrapper.ng-hide-remove.ng-hide-remove-active {
+    opacity: 1;
+}
+.j-question {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    text-align: center;
+    top: 5%;
+    left: 5%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+}
+.j-question.ng-hide-remove {
+    left: -100%;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    -webkit-transition-delay: 0.25s;
+    -moz-transition-delay: 0.25s;
+    -ms-transition-delay: 0.25s;
+    -o-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+}
+.j-question.ng-hide-remove.ng-hide-remove-active {
+    left: 5%;
+}
+
+.j-question.ng-hide-add {
+    left: 5%;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+.j-question.ng-hide-add.ng-hide-add-active {
+    left: 100%;
+}
+
+.j-question-text{
+    position: absolute;
+    top:50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    left:50%;
+    width:90%;
+    font-weight: bold;
+    font-size: 80;
+    line-height: 0.9;
+    text-transform: uppercase;
+    font-family: lg;
+
+}
+
