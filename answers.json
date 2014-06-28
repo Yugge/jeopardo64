@@ -3,134 +3,164 @@
 		"firstBoard": {
 			"Spel med andra namn": [
 				{
-						"answer": "",
-						"question": ""
+						"answer": "Test",
+						"question": "test 2",
+                        "played": false
 				},
 				{
-						"answer": "",
-						"question": ""
+						"answer": "2",
+						"question": "",
+                        "played": false
 				},
 				{
-						"answer": "",
-						"question": ""
+						"answer": "3",
+						"question": "",
+                        "played": false
 				},
 				{
-						"answer": "",
-						"question": ""
+						"answer": "4",
+						"question": "",
+                        "played": false
 				},
 				{
-						"answer": "",
-						"question": ""
+						"answer": "5",
+						"question": "",
+                        "played": false
 				}
 			],
 			"Gissa Remixen": [
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				}
 			],
 			"Slåss med oss": [
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				}
 			],
 			"Gissa cosplayen": [
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				}
 			],
 			"Innovativa styrdon": [
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				}
 			],
 			"Storylines som är svåra att glömma": [
 				{
 						"answer": "2004 - Denna guldklimp vann pris för bästa nya teknik! Mot Nintendo DS, Alienwars ALX PC, Black till PS2, Unreal Engine 3",
-						"question": "Vad är Playstation Portable"
+						"question": "Vad är Playstation Portable",
+                        "played": false
 				},
 				{
 						"answer": "2004 - Denna guldklimp vann pris för bästa nya teknik! Mot Nintendo DS, Alienwars ALX PC, Black till PS2, Unreal Engine 3",
-						"question": "Vad är Playstation Portable"
+						"question": "Vad är Playstation Portable",
+                        "played": false
 				},
 				{
 						"answer": "2004 - Denna guldklimp vann pris för bästa nya teknik! Mot Nintendo DS, Alienwars ALX PC, Black till PS2, Unreal Engine 3",
-						"question": "Vad är Playstation Portable"
+						"question": "Vad är Playstation Portable",
+                        "played": false
 				},
 				{
 						"answer": "2004 - Denna guldklimp vann pris för bästa nya teknik! Mot Nintendo DS, Alienwars ALX PC, Black till PS2, Unreal Engine 3",
-						"question": "Vad är Playstation Portable"
+						"question": "Vad är Playstation Portable",
+                        "played": false
 				},
 				{
 						"answer": "2004 - Denna guldklimp vann pris för bästa nya teknik! Mot Nintendo DS, Alienwars ALX PC, Black till PS2, Unreal Engine 3",
-						"question": "Vad är Playstation Portable"
+						"question": "Vad är Playstation Portable",
+                        "played": false
 				}
 			]
 		},
@@ -139,117 +169,143 @@
 			"E3 2004 enligt gamespot": [
 				{
 					"answer": "2004 - Denna guldklimp vann pris för bästa nya teknik! Mot Nintendo DS, Alienwars ALX PC, Black till PS2, Unreal Engine 3",
-					"question": "Vad är Playstation Portable"
+					"question": "Vad är Playstation Portable",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				}
 			],
 			"Kategori": [
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				}
 			],
 			"Kategori": [
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				}
 			],
 			"Kategori": [
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				}
 			],
 			"Kategori": [
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				},
 				{
 						"answer": "",
-						"question": ""
+						"question": "",
+                        "played": false
 				}
 			]
 		},
 		"finalAnswer": {
 			"answer": "",
-			"question": ""
+			"question": "",
+            "played": false
 		} 
 	}
 }

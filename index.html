@@ -12,12 +12,12 @@
     </head>
     <body ng-controller="mainController">
     <div ng-show="board" class="pure-u-4-5 j-set-wrapper">
-        <div class="pure-u-1-6 j-set-headers" ng-repeat="y in headers">
-            <div class="j-header">{{y}}</div>
+        <div class="pure-u-1-6 j-set-headers" ng-repeat="(k,v) in currentBoard">
+            <div class="j-header">{{k}}</div>
         </div>
         <div class="j-set" ng-repeat="x in columns">
-            <div class="pure-u-1-6 j-value-row" ng-repeat="y in [0,1,2,3,4,5]">
-                <div class="j-value" ng-show="x" ng-click="showAnswer(y,x)">{{x+1}}00</div>
+            <div class="pure-u-1-6 j-value-row" ng-repeat="(k,v) in currentBoard">
+                <div class="j-value" ng-show="!getVisibility(k,x-1)" ng-click="showAnswer(k,x-1)">{{x}}00</div>
             </div>
         </div>
     </div>

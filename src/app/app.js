@@ -1,32 +1,46 @@
 angular.module('app', ['ngAnimate'])
 
 .controller('mainController', function($scope, $timeout){
-    $scope.counter = 0;
+    $scope.counter = 1;
     $scope.columns = [];
+    $scope.answers = {};
 
-    $scope.headers = ['Radical Rebrand','Remix Galore','Forgotten baddies','Storytime','Memes from Games','People in games']
-    $scope.questions = [['This is the european name for starfox (SNES)','This is the european name for the contra franchise','this is the japanese name of our super mario bros 2','d',['e']],[],[],[],[],[]];
+    $scope.currentBoard = {};
     $scope.board = true;
     $timeout(function(){
-        $scope.addNumber();
+        $.getJSON('answers.json', function(data) {
+            $scope.answers = data.answers;
+            $scope.currentBoard = $scope.answers.firstBoard;
+        });
         console.log('init',$scope.columns);
+        $scope.addNumber();
     },250);
 
     $scope.addNumber = function(){
-        if ($scope.counter != 5) {
+        if ($scope.counter != 6) {
             $scope.columns.push($scope.counter);
             $scope.counter++;
             $timeout($scope.addNumber, 250);
-            console.log('adding',$scope.counter);
+            //console.log('adding',$scope.counter, $scope.columns);
         }
     };
     $scope.showAnswer = function(column,row){
         $scope.board = false;
         $scope.question = true;
-        $scope.currentAnswer = $scope.questions[column][row];
-        console.log($scope.currentAnswer, column, row);
+        $scope.currentAnswer = $scope.currentBoard[column][row]["answer"];
+        $scope.currentBoard[column][row].played = true;
+        console.log($scope.currentBoard[column][row]);
+
+
     };
-2
+
+    $scope.getVisibility = function(colName, row){
+        if (typeof $scope.currentBoard[colName] === undefined){
+            return false
+        }
+        return $scope.currentBoard[colName][row].played;
+    };
+
     $scope.showBoard = function(){
         $scope.board = true;
         $scope.question = false;
