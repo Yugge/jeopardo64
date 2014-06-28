@@ -1,9 +1,10 @@
 @font-face {
     font-family: lg;
-    src: url(/src/lg.otf);
+    src: url(../src/lg.otf);
 }
 body {
     background-color: #31a3f5;
+    overflow: hidden;
 }
 
 .hello {
@@ -35,7 +36,7 @@ body {
     font-size: 150%;
     color: #ffffff;
     margin-bottom: 20px;
-    opacity: 0;
+    opacity: 1;
 }
 
 .j-set.ng-enter {

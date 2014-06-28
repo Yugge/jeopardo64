@@ -12,17 +12,17 @@
     </head>
     <body ng-controller="mainController">
     <div ng-show="board" class="pure-u-4-5 j-set-wrapper">
-        <div class="pure-u-1-6 j-set-headers" ng-repeat="y in [1,2,3,4,5,6]">
-            <div class="j-header">test</div>
+        <div class="pure-u-1-6 j-set-headers" ng-repeat="y in headers">
+            <div class="j-header">{{y}}</div>
         </div>
         <div class="j-set" ng-repeat="x in columns">
-            <div class="pure-u-1-6 j-value-row" ng-repeat="y in [1,2,3,4,5,6]">
-                <div class="j-value" ng-click="showAnswer()">{{x+1}}00</div>
+            <div class="pure-u-1-6 j-value-row" ng-repeat="y in [0,1,2,3,4,5]">
+                <div class="j-value" ng-show="x" ng-click="showAnswer(y,x)">{{x+1}}00</div>
             </div>
         </div>
     </div>
     <div class="j-question" ng-show="question" ng-click="showBoard()">
-        <span class="j-question-text">She wasn't the grandmother but the darling dog/housemaid in "Peter Pan"</span>
+        <span class="j-question-text">{{currentAnswer}}</span>
     </div>
     </body>
 </html>

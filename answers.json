@@ -1,0 +1,255 @@
+{
+	"answers": {
+		"firstBoard": {
+			"Spel med andra namn": [
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				}
+			],
+			"Gissa Remixen": [
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				}
+			],
+			"Slåss med oss": [
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				}
+			],
+			"Gissa cosplayen": [
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				}
+			],
+			"Innovativa styrdon": [
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				}
+			],
+			"Storylines som är svåra att glömma": [
+				{
+						"answer": "2004 - Denna guldklimp vann pris för bästa nya teknik! Mot Nintendo DS, Alienwars ALX PC, Black till PS2, Unreal Engine 3",
+						"question": "Vad är Playstation Portable"
+				},
+				{
+						"answer": "2004 - Denna guldklimp vann pris för bästa nya teknik! Mot Nintendo DS, Alienwars ALX PC, Black till PS2, Unreal Engine 3",
+						"question": "Vad är Playstation Portable"
+				},
+				{
+						"answer": "2004 - Denna guldklimp vann pris för bästa nya teknik! Mot Nintendo DS, Alienwars ALX PC, Black till PS2, Unreal Engine 3",
+						"question": "Vad är Playstation Portable"
+				},
+				{
+						"answer": "2004 - Denna guldklimp vann pris för bästa nya teknik! Mot Nintendo DS, Alienwars ALX PC, Black till PS2, Unreal Engine 3",
+						"question": "Vad är Playstation Portable"
+				},
+				{
+						"answer": "2004 - Denna guldklimp vann pris för bästa nya teknik! Mot Nintendo DS, Alienwars ALX PC, Black till PS2, Unreal Engine 3",
+						"question": "Vad är Playstation Portable"
+				}
+			]
+		},
+		"secondBoard" : {
+			"Spel utan slut": [],
+			"E3 2004 enligt gamespot": [
+				{
+					"answer": "2004 - Denna guldklimp vann pris för bästa nya teknik! Mot Nintendo DS, Alienwars ALX PC, Black till PS2, Unreal Engine 3",
+					"question": "Vad är Playstation Portable"
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				}
+			],
+			"Kategori": [
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				}
+			],
+			"Kategori": [
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				}
+			],
+			"Kategori": [
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				}
+			],
+			"Kategori": [
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				},
+				{
+						"answer": "",
+						"question": ""
+				}
+			]
+		},
+		"finalAnswer": {
+			"answer": "",
+			"question": ""
+		} 
+	}
+}
