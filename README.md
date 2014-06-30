@@ -34,7 +34,7 @@ Installation
 --------------
 
 ```sh
-git clone [git-repo-url] jeopard064
+git clone [git-repo-url] jeopardo64
 cd jeopardo64
 ```
 
