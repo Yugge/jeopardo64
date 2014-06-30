@@ -165,7 +165,33 @@
 			]
 		},
 		"secondBoard" : {
-			"Spel utan slut": [],
+			"Spel utan slut": [
+                {
+                    "answer": "2004 - Denna guldklimp vann pris för bästa nya teknik! Mot Nintendo DS, Alienwars ALX PC, Black till PS2, Unreal Engine 3",
+                    "question": "Vad är Playstation Portable",
+                    "played": false
+                },
+                {
+                    "answer": "",
+                    "question": "",
+                    "played": false
+                },
+                {
+                    "answer": "",
+                    "question": "",
+                    "played": false
+                },
+                {
+                    "answer": "",
+                    "question": "",
+                    "played": false
+                },
+                {
+                    "answer": "",
+                    "question": "",
+                    "played": false
+                }
+            ],
 			"E3 2004 enligt gamespot": [
 				{
 					"answer": "2004 - Denna guldklimp vann pris för bästa nya teknik! Mot Nintendo DS, Alienwars ALX PC, Black till PS2, Unreal Engine 3",
@@ -193,7 +219,7 @@
                         "played": false
 				}
 			],
-			"Kategori": [
+			"Kategori 1": [
 				{
 						"answer": "",
 						"question": "",
@@ -220,7 +246,7 @@
                         "played": false
 				}
 			],
-			"Kategori": [
+			"Kategori 2": [
 				{
 						"answer": "",
 						"question": "",
@@ -247,7 +273,7 @@
                         "played": false
 				}
 			],
-			"Kategori": [
+			"Kategori 3": [
 				{
 						"answer": "",
 						"question": "",
@@ -274,7 +300,7 @@
                         "played": false
 				}
 			],
-			"Kategori": [
+			"Kategori 4": [
 				{
 						"answer": "",
 						"question": "",
@@ -303,7 +329,8 @@
 			]
 		},
 		"finalAnswer": {
-			"answer": "",
+            "category": "Superspecial",
+			"answer": "FinalAnswer...",
 			"question": "",
             "played": false
 		} 

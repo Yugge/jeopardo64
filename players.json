@@ -1,0 +1,16 @@
+{
+    "players": {
+        "Yugge": {
+            "player": 1,
+            "points": 0
+        },
+        "VRKLGN": {
+            "player": 2,
+            "points": 0
+        },
+        "Lemming": {
+            "player": 3,
+            "points": 0
+        }
+    }
+}
