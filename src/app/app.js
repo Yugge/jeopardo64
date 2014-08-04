@@ -1,10 +1,20 @@
 angular.module('app', ['ngAnimate'])
 
 .controller('mainController', function($scope, $timeout){
+    //TODO: Write as iterator
+    var PLAYER_ONE=49;
+    var PLAYER_TWO=50;
+    var PLAYER_THREE=51;
+    var RIGHT=82;
+    var WRONG=87;
+
     $scope.counter = 1;
     $scope.columns = [];
     $scope.answers = {};
     $scope.players = {};
+
+    $scope.currentAnswerer = {};
+    $scope.inactive = [];
 
     $scope.currentBoard = {};
     $scope.round = 1;
@@ -34,6 +44,7 @@ angular.module('app', ['ngAnimate'])
     $scope.showAnswer = function(column,row){
         $scope.displayMode = 'answer';
         $scope.currentAnswer = $scope.currentBoard[column][row]["answer"];
+        $scope.currentWorth = (row+1) * $scope.round * 100;
         $scope.currentBoard[column][row].played = true;
         console.log($scope.currentBoard[column][row]);
     };
@@ -52,9 +63,9 @@ angular.module('app', ['ngAnimate'])
     $scope.timeForBoardChange = function(){
         var retValue = true;
         Object.keys($scope.currentBoard).forEach(function(catName){
-            console.log(catName);
+            //console.log(catName);
             $scope.currentBoard[catName].forEach(function(answer){
-                console.log("\t",answer);
+                //console.log("\t",answer);
                 if (answer.played == false){
                     retValue = false;
                 }
@@ -90,6 +101,11 @@ angular.module('app', ['ngAnimate'])
             }
         }
     };
+
+    $scope.returnToAnswer = function(){
+      $scope.displayMode = "answer";
+    };
+
     $scope.inoutloop = function () {
         $scope.$apply(function () {
             $scope.board = !$scope.board;
@@ -97,5 +113,57 @@ angular.module('app', ['ngAnimate'])
             }
         );
         $timeout($scope.inoutloop,1000);
-    }
+    };
+
+    $(window).keydown(function(event){
+        if ($scope.displayMode == "answer"){
+            if (event.which >= 49 && event.which <= 51) {
+                var p = event.which - 48;
+                if ($scope.inactive.indexOf(p) != -1) {
+                    return;
+                }
+                console.log("Player", p);
+                $scope.currentAnswerer = _.filter($scope.players, function (obj) {
+                    return obj.player == String(p)
+                })[0];
+                $scope.displayMode = "player";
+                $scope.$digest();
+
+                console.log($scope.currentAnswerer, $scope.displayMode);
+            } else if (event.which == 81){
+                $scope.showBoard();
+            }
+        }
+        if ($scope.displayMode == "player"){
+
+            if (event.which == RIGHT){
+                console.log("Correct! Player",$scope.currentAnswerer.name,"score",$scope.currentWorth);
+                $scope.players[$scope.currentAnswerer.name].points += $scope.currentWorth;
+                $scope.showBoard();
+                console.log($scope.players[$scope.currentAnswerer.name]);
+                $scope.inactive = [];
+                $scope.$digest();
+
+            }
+            if (event.which == WRONG){
+                console.log("WRONG! Player",$scope.currentAnswerer.name,"score -",$scope.currentWorth);
+                $scope.players[$scope.currentAnswerer.name].points -= $scope.currentWorth;
+                console.log($scope.players[$scope.currentAnswerer.name]);
+                $scope.inactive.push(parseInt($scope.currentAnswerer.player));
+                if ($scope.inactive.length == 3){
+                    $scope.inactive = [];
+                    $scope.showBoard();
+                } else {
+                    $scope.returnToAnswer();
+                }
+
+
+
+                $scope.$digest();
+            }
+
+        }
+
+        console.log("Keydown:",event.which);
+    });
 });
