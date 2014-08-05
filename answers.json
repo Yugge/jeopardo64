@@ -1,138 +1,138 @@
 {
 	"answers": {
 		"firstBoard": {
-			"Spel med andra namn": [
+			"Kända Memes": [
 				{
-						"answer": "Test",
-						"question": "test 2",
+						"answer": "Äventyrslusten ungdom avslutar sin karriär efter svår skada i benet...",
+						"question": "Vad är “I Took An Arrow To The Knee”?",
                         "played": false
 				},
 				{
-						"answer": "2",
-						"question": "",
+						"answer": "Aristokratisk herre omber dig att inspektera hans ståtliga kuse",
+						"question": "Vad är “Look at my horse”?",
                         "played": false
 				},
 				{
-						"answer": "3",
-						"question": "",
+						"answer": "Den utlovade belöningen var endast en fiktiv drivkraft",
+						"question": "Vad är “The Cake Is A Lie”?",
                         "played": false
 				},
 				{
-						"answer": "4",
-						"question": "",
+						"answer": "Plats i södra grekland som omnämns i Frank Miller serie",
+						"question": "Vad är “Var är Sparta?”?",
                         "played": false
 				},
 				{
-						"answer": "5",
-						"question": "",
+						"answer": "Denna Josh blev en synonym för sarkasm i streaming",
+						"question": "Vem är Josh Kappa?",
                         "played": false
 				}
 			],
-			"Gissa Remixen": [
+			"Jeopardy Teen Edition 2010": [
 				{
-						"answer": "test",
-						"question": "test",
+						"answer": "In a recent release from Sega, this title character & his pal sonic visit the 2010 Winter Olympics",
+						"question": "Who Is Mario",
                         "played": false
 				},
 				{
-						"answer": "",
-						"question": "",
+						"answer": "The Adventure Continues is the second installment in the lego game starring this state-named movie hero",
+						"question": "Who is Indiana Jones",
                         "played": false
 				},
 				{
-						"answer": "",
-						"question": "",
+						"answer": "Attack of The Saiyans is an installment for the Z Series of this Nintendo “Ball” Game",
+						"question": "What is Dragonball",
                         "played": false
 				},
 				{
-						"answer": "",
-						"question": "",
+						"answer": "In 2009 this Nintendo Professor moved from “The Curious Village” to “The Diabolical Box",
+						"question": "Who is Professor Layton",
                         "played": false
 				},
 				{
-						"answer": "",
-						"question": "",
+						"answer": "The title princess of this game was based off of Scott F. Fitzgerald's wife",
+						"question": "What is The Legend of Zelda",
+                        "played": false
+				}
+			],
+			"Tim 'Freakin' Schafer": [
+				{
+						"answer": "År 2000 lämnade Tim Schafer LucasArts för att starta en egen utvecklingsstudio, detta blev namnet.",
+						"question": "Vad är Double Fine",
+                        "played": false
+				},
+				{
+						"answer": "Detta är namnet på skatten som är sagd att vara den största av dem alla i spelet Monkey Island 2",
+						"question": "Vad är Big Whoop",
+                        "played": false
+				},
+				{
+						"answer": "Det här heter huvudkaraktären i Tim Schafers motorcykel drama Full Throttle från 1995",
+						"question": "Vem är Ben",
+                        "played": false
+				},
+				{
+						"answer": "3.45 Miljoner samlade Double Fine in för att skapa "Double Fine Adventure", det här var titeln på den slutprodukten",
+						"question": "Vad är Broken Age",
+                        "played": false
+				},
+				{
+						"answer": "Det här var undertiteln till Double Fines spel där spelaren kan interagera med flera karaktärer från serien Sesame Street",
+						"question": "Vad är Once Upon a Monster",
                         "played": false
 				}
 			],
 			"Slåss med oss": [
 				{
-						"answer": "",
-						"question": "",
+						"answer": "Med ett rött hårband och oändliga utrop av Hadouken är det här lätt en av fightingspelsvärldens mest igenkända karaktärer",
+						"question": "Ryu",
                         "played": false
 				},
 				{
-						"answer": "",
-						"question": "",
+						"answer": "Såhär heter trollkarlen som återupplivat både Ermac & Sindel i Mortal Kombat 9",
+						"question": "Quan Chi",
                         "played": false
 				},
 				{
-						"answer": "",
-						"question": "",
+						"answer": "Omega-svärdet och Uggle-skölden är denna kämpinnas vapen i Soul Calibur",
+						"question": "Sophitia",
                         "played": false
 				},
 				{
-						"answer": "",
-						"question": "",
+						"answer": "Mike Bison hette denna karaktär i Japan men vad hette han i USA?",
+						"question": "Balrog",
                         "played": false
 				},
 				{
-						"answer": "",
-						"question": "",
-                        "played": false
-				}
-			],
-			"Gissa cosplayen": [
-				{
-						"answer": "",
-						"question": "",
-                        "played": false
-				},
-				{
-						"answer": "",
-						"question": "",
-                        "played": false
-				},
-				{
-						"answer": "",
-						"question": "",
-                        "played": false
-				},
-				{
-						"answer": "",
-						"question": "",
-                        "played": false
-				},
-				{
-						"answer": "",
-						"question": "",
+						"answer": "Så många bonuskaraktärer fick Playstation versionen av Streetfighter x Tekken",
+						"question": "5",
                         "played": false
 				}
 			],
 			"Innovativa styrdon": [
 				{
-						"answer": "",
-						"question": "",
+						"answer": "Med hjälp av A och B knappen ska spelaren höja flaggor åt det hållet som denna titelkaraktär väljer",
+						"question": "Shy Guy Says",
                         "played": false
 				},
 				{
-						"answer": "",
-						"question": "",
+						"answer": "En grupp med igloos framträder på banan, ett djur åker på mage över banan. Akta dig.",
+						"question": "Pushy Penguins",
                         "played": false
 				},
 				{
-						"answer": "",
-						"question": "",
+						"answer": "Fyra spelare släpps av på en plattform omringad av Thwomps som leviterar över elektriska kanoner",
+						"question": "Take Me Ohm",
                         "played": false
 				},
 				{
-						"answer": "",
-						"question": "",
+						"answer": "Basketboll får en lite oväntad twist i detta Mario Party-spel",
+						"question": "Bombsketball",
                         "played": false
 				},
 				{
-						"answer": "",
-						"question": "",
+						"answer": "Toad ställer i detta minispel kluriga frågor om det pågående Mario Party partiet, det gäller att hålla koll.",
+						"question": "M.P.I.Q",
                         "played": false
 				}
 			],
@@ -333,6 +333,6 @@
 			"answer": "FinalAnswer...",
 			"question": "",
             "played": false
-		} 
+		}
 	}
 }
