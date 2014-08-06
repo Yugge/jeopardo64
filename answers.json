@@ -165,7 +165,7 @@
 			]
 		},
 		"secondBoard" : {
-			"Spel utan slut": [
+			"E3 Genom Tiderna": [
                 {
                     "answer": "2004 - Denna guldklimp vann pris för bästa nya teknik! Mot Nintendo DS, Alienwars ALX PC, Black till PS2, Unreal Engine 3",
                     "question": "Vad är Playstation Portable",
@@ -192,7 +192,7 @@
                     "played": false
                 }
             ],
-			"E3 2004 enligt gamespot": [
+			"The Year of The Cartridge": [
 				{
 					"answer": "2004 - Denna guldklimp vann pris för bästa nya teknik! Mot Nintendo DS, Alienwars ALX PC, Black till PS2, Unreal Engine 3",
 					"question": "Vad är Playstation Portable",
@@ -219,7 +219,7 @@
                         "played": false
 				}
 			],
-			"Kategori 1": [
+			"Lost in Limbo": [
 				{
 						"answer": "",
 						"question": "",
@@ -246,7 +246,7 @@
                         "played": false
 				}
 			],
-			"Kategori 2": [
+			"The Game: The Movie": [
 				{
 						"answer": "",
 						"question": "",
@@ -273,7 +273,7 @@
                         "played": false
 				}
 			],
-			"Kategori 3": [
+			"Free to play": [
 				{
 						"answer": "",
 						"question": "",
@@ -300,7 +300,7 @@
                         "played": false
 				}
 			],
-			"Kategori 4": [
+			"The Company Formerly Known as Prince": [
 				{
 						"answer": "",
 						"question": "",
