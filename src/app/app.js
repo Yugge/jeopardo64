@@ -1,6 +1,6 @@
 angular.module('app', ['ngAnimate'])
 
-.controller('mainController', function($scope, $timeout){
+.controller('mainController', function($scope, $timeout, $http){
     //TODO: Write as iterator
     var PLAYER_ONE=49;
     var PLAYER_TWO=50;
@@ -12,6 +12,7 @@ angular.module('app', ['ngAnimate'])
     $scope.columns = [];
     $scope.answers = {};
     $scope.players = {};
+    var wrongAnswerSound = new Audio('../../audio/bidup.mp3');
 
     $scope.currentAnswerer = {};
     $scope.inactive = [];
@@ -20,6 +21,58 @@ angular.module('app', ['ngAnimate'])
     $scope.round = 1;
     $scope.displayMode = "board";
     $scope.transitionText = "Current Score";
+
+    //get action
+    var ActionLoop = function(){
+        console.log('getting action...');
+        $http({method: 'GET', url: 'http://localhost:8081/getAction'}).
+            success(function(info, status, headers, config) {
+                console.log("Got action:",info.action);
+
+                if (info.action == "answer") {
+                    console.log("answer", info, info.data);
+                    $scope.showAnswer(info.data.column,info.data.row);
+                }
+                if (info.action == "score") {
+                    $scope.displayMode = "score";
+                }
+                if (info.action == "board") {
+                    if ($scope.displayMode == "answer"){
+                        wrongAnswerSound.play();
+                    }
+                    $scope.showBoard();
+                    console.log($scope.displayMode);
+
+                }
+                if (info.action == "correct" && $scope.displayMode == "player") {
+                    console.log("Correct! Player",$scope.currentAnswerer.name,"score",$scope.currentWorth);
+                    $scope.players[$scope.currentAnswerer.name].points += $scope.currentWorth;
+                    $scope.showBoard();
+                    console.log($scope.players[$scope.currentAnswerer.name]);
+                    $scope.inactive = [];
+                }
+                if (info.action == "wrong" && $scope.displayMode == "player") {
+                    console.log('bedup');
+                    wrongAnswerSound.play();
+                    console.log("WRONG! Player",$scope.currentAnswerer.name,"score -",$scope.currentWorth);
+                    $scope.players[$scope.currentAnswerer.name].points -= $scope.currentWorth;
+                    console.log($scope.players[$scope.currentAnswerer.name]);
+                    $scope.inactive.push(parseInt($scope.currentAnswerer.player));
+                    if ($scope.inactive.length > 2){
+                        $scope.inactive = [];
+                        $scope.showBoard();
+                    } else {
+                        $scope.returnToAnswer();
+                    }
+                }
+            }).error(function(data, status, headers, config) {
+                console.log(data,status,headers,config);
+            });
+        console.log('out');
+        $timeout(ActionLoop,100)
+    };
+
+
     $timeout(function(){
         $.getJSON('answers.json', function(data) {
             $scope.answers = data.answers;
@@ -31,6 +84,7 @@ angular.module('app', ['ngAnimate'])
         console.log('init',$scope.columns);
         $scope.displayMode = "board";
         $scope.addNumber();
+        $timeout(ActionLoop,100);
     },250);
 
     $scope.addNumber = function(){

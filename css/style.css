@@ -193,4 +193,77 @@ body {
     font-family: lg;
 
 }
+.j-question-admin {
+    background-color: white;
+    width: 90%;
+    height: 45%;
+    position: absolute;
+    text-align: center;
+    top: 5%;
+    left: 5%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.j-question-q {
+    background-color: white;
+    width: 90%;
+    height: 15%;
+    position: absolute;
+    text-align: center;
+    top: 52%;
+    left: 5%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.j-question-correct {
+    background-color: rgb(104, 231, 119);;
+    width: 43%;
+    height: 20%;
 
+    position: absolute;
+    text-align: center;
+    top: 70%;
+    left: 5%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.j-question-wrong {
+    background-color: rgb(248, 91, 91);
+
+    width: 43%;
+    height: 20%;
+    position: absolute;
+    text-align: center;
+    top: 70%;
+    left: 52%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.j-question-text-admin{
+    position: absolute;
+    top:50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    left:50%;
+    width:90%;
+    font-weight: bold;
+    font-size: 50;
+    line-height: 0.9;
+    text-transform: uppercase;
+    font-family: lg;
+
+}
+.j-question-text-admin-wrong{
+    position: absolute;
+    top:50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    left:50%;
+    width:90%;
+    font-weight: bold;
+    font-size: 74;
+    line-height: 0.9;
+    text-transform: uppercase;
+    font-family: lg;
+
+}
