@@ -24,13 +24,11 @@ angular.module('app', ['ngAnimate'])
 
     //get action
     var ActionLoop = function(){
-        console.log('getting action...');
+
         $http({method: 'GET', url: 'http://192.168.2.14:8081/getAction'}).
             success(function(info, status, headers, config) {
-                console.log("Got action:",info.action);
 
                 if (info.action == "answer") {
-                    console.log("answer", info, info.data);
                     $scope.showAnswer(info.data.column,info.data.row);
                 }
                 if (info.action == "score") {
@@ -68,7 +66,6 @@ angular.module('app', ['ngAnimate'])
             }).error(function(data, status, headers, config) {
                 console.log(data,status,headers,config);
             });
-        console.log('out');
         $timeout(ActionLoop,100)
     };
 
@@ -171,8 +168,8 @@ angular.module('app', ['ngAnimate'])
 
     $(window).keydown(function(event){
         if ($scope.displayMode == "answer"){
-            if (event.which >= 49 && event.which <= 51) {
-                var p = event.which - 48;
+            if (event.which >= 97 && event.which <= 99) {
+                var p = event.which - 96;
                 if ($scope.inactive.indexOf(p) != -1) {
                     return;
                 }
