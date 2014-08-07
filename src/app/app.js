@@ -68,7 +68,7 @@ angular.module('app', ['ngAnimate'])
             });
         $timeout(ActionLoop,100)
     };
-
+    $timeout(ActionLoop,100);
 
 
 
@@ -137,7 +137,7 @@ angular.module('app', ['ngAnimate'])
                     console.log('init',$scope.columns);
                     $scope.displayMode = "board";
                     $scope.addNumber();
-                    $timeout(ActionLoop,100);
+
                 },250);
                 return
             }
