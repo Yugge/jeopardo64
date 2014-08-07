@@ -26,7 +26,7 @@
     <div class="j-question" ng-show="displayMode == 'answer'" ng-click="showBoard()">
         <span class="j-question-text">{{currentAnswer}}</span>
     </div>
-    <div class="j-question" ng-show="displayMode == 'player'" ng-click="returnToAnswer()">
+    <div class="j-question j-player-{{currentAnswerer.player}}"  ng-show="displayMode == 'player'" ng-click="returnToAnswer()">
         <span class="j-question-text">{{currentAnswerer.name}}</span>
     </div>
     <div class="j-score-wrapper" ng-show="displayMode == 'score'" ng-click="transitionToBoard()">
