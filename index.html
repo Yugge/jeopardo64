@@ -12,6 +12,7 @@
 
     </head>
     <body ng-controller="mainController">
+    <audio id="myAudioTag" src="audio/bidup.mp3" preload="auto"></audio>
     <div ng-show="displayMode == 'board'" class="pure-u-4-5 j-set-wrapper">
         <div class="pure-u-1-6 j-set-headers" ng-repeat="(k,v) in currentBoard">
             <div class="j-header">{{k}}</div>
