@@ -49,19 +49,19 @@ angular.module('app', ['ngAnimate'])
         $scope.sendAnswerToServer = function(column, row){
             var action = {"action": "answer", "data": {"row": row, "column": column}};
             console.log(action);
-            $http.post('http://192.168.2.174:8081/setAction', action);
+            $http.post('http://192.168.2.14:8081/setAction', action);
         };
         $scope.sendCorrect = function(){
             var action = {"action": "correct"};
 
-            $http.post('http://192.168.2.174:8081/setAction', action);
+            $http.post('http://192.168.2.14:8081/setAction', action);
             $scope.showBoard();
             $scope.inactive = [];
         };
         $scope.sendWrong = function(){
             var action = {"action": "wrong"};
 
-            $http.post('http://192.168.2.174:8081/setAction', action);
+            $http.post('http://192.168.2.14:8081/setAction', action);
             $scope.inactive.push("filler");
             if ($scope.inactive.length == 3) {
                 $scope.showBoard();
@@ -71,7 +71,7 @@ angular.module('app', ['ngAnimate'])
         $scope.sendShowBoard = function(){
             var action = {"action": "board"};
 
-            $http.post('http://192.168.2.174:8081/setAction', action);
+            $http.post('http://192.168.2.14:8081/setAction', action);
         };
         $scope.showAnswer = function(column,row){
             $scope.displayMode = 'answer';

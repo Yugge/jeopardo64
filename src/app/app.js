@@ -25,7 +25,7 @@ angular.module('app', ['ngAnimate'])
     //get action
     var ActionLoop = function(){
         console.log('getting action...');
-        $http({method: 'GET', url: 'http://localhost:8081/getAction'}).
+        $http({method: 'GET', url: 'http://192.168.2.14:8081/getAction'}).
             success(function(info, status, headers, config) {
                 console.log("Got action:",info.action);
 
