@@ -202,6 +202,32 @@ body {
     font-family: lg;
 
 }
+.j-splash {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    text-align: center;
+    top: 5%;
+    left: 5%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+}
+.j-splash-text{
+    position: absolute;
+    top:50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    left:50%;
+    width:90%;
+    font-weight: bold;
+    font-size: 140px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: lg;
+
+}
 .j-question-admin {
     background-color: white;
     width: 90%;

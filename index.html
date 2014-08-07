@@ -23,6 +23,9 @@
             </div>
         </div>
     </div>
+    <div class="j-splash" ng-show="displayMode == 'splash'" ng-click="showBoard()">
+        <span class="j-splash-text">Jeopardo64</span>
+    </div>
     <div class="j-question" ng-show="displayMode == 'answer'" ng-click="showBoard()">
         <span class="j-question-text">{{currentAnswer}}</span>
     </div>

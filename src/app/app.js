@@ -18,8 +18,8 @@ angular.module('app', ['ngAnimate'])
     $scope.inactive = [];
 
     $scope.currentBoard = {};
-    $scope.round = 1;
-    $scope.displayMode = "board";
+    $scope.round = 0;
+    $scope.displayMode = "splash";
     $scope.transitionText = "Current Score";
 
     //get action
@@ -70,19 +70,7 @@ angular.module('app', ['ngAnimate'])
     };
 
 
-    $timeout(function(){
-        $.getJSON('answers.json', function(data) {
-            $scope.answers = data.answers;
-            $scope.currentBoard = $scope.answers.firstBoard;
-        });
-        $.getJSON('players.json', function(data) {
-            $scope.players = data.players;
-        });
-        console.log('init',$scope.columns);
-        $scope.displayMode = "board";
-        $scope.addNumber();
-        $timeout(ActionLoop,100);
-    },250);
+
 
     $scope.addNumber = function(){
         if ($scope.counter != 6) {
@@ -136,6 +124,23 @@ angular.module('app', ['ngAnimate'])
     $scope.showBoard = function(){
         $scope.displayMode = 'board';
         if ($scope.timeForBoardChange()){
+            if ($scope.round == 0) {
+                $scope.round += 1;
+                $timeout(function(){
+                    $.getJSON('answers.json', function(data) {
+                        $scope.answers = data.answers;
+                        $scope.currentBoard = $scope.answers.firstBoard;
+                    });
+                    $.getJSON('players.json', function(data) {
+                        $scope.players = data.players;
+                    });
+                    console.log('init',$scope.columns);
+                    $scope.displayMode = "board";
+                    $scope.addNumber();
+                    $timeout(ActionLoop,100);
+                },250);
+                return
+            }
             if ($scope.round == 1) {
                 $scope.transitionText = 'Get ready for Round 2!';
                 $scope.displayMode = 'score';
